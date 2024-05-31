@@ -13,4 +13,4 @@
     - name: Copy file
       copy:
         src: /tmp/source_file.txt  # Source is now the newly created file
-        dest: /remote/path/destination_file.txt  # Destination on the remote server
+        dest: /tmp/source_file.txt  # Destination on the remote server
