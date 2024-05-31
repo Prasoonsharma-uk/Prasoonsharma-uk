@@ -6,8 +6,10 @@
     ansible_user: vagrant
     ansible_ssh_private_key_file: /var/lib/jenkins/.ssh/vagrant_key
 
-  tasks:
+tasks:
+    - name: Create file (if it doesn't exist)
+      command: touch /tmp/file.txt  # Creates an empty file
     - name: Copy file
       copy:
-        src: /tmp/file.txt  # Path to the local file you want to copy
-        dest: /tmp/file.txt  # Path to the destination on the remote server
+        src: /tmp/file.txt  # Source is now the newly created file
+        dest: /tmp/file.txt  # Destination on the remote server
