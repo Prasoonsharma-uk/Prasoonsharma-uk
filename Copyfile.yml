@@ -1,0 +1,10 @@
+---
+- name: Copy file to remote server
+  hosts: 192.168.33.11
+  become: true  # Optional, if you need to escalate privileges to copy to certain directories
+
+  tasks:
+    - name: Copy file
+      copy:
+        src: /path/to/local/file.txt  # Path to the local file you want to copy
+        dest: /path/to/remote/destination/file.txt  # Path to the destination on the remote server
