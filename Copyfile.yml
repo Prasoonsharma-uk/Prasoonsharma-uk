@@ -6,5 +6,5 @@
   tasks:
     - name: Copy file
       copy:
-        src: /path/to/local/file.txt  # Path to the local file you want to copy
-        dest: /path/to/remote/destination/file.txt  # Path to the destination on the remote server
+        src: /tmp/file.txt  # Path to the local file you want to copy
+        dest: /tmp/file.txt  # Path to the destination on the remote server
