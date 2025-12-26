@@ -15,3 +15,4 @@
         src: /tmp/file123467.txt  # Source is now the newly created file
         dest: /tmp/file123467.txt  # Destination on the remote server
         remote_src: yes  # Indicates the source is on the remote host
+        
